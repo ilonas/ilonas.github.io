@@ -14,7 +14,11 @@
 
 		<button onClick="Wix.requestLogin({mode:'login'},function(a){console.log(a)},function(a){console.log(a)});">Request Login</button>
 	
-<button onClick="Wix.navigateToAnchor('anchor1', function(error) { console.log(error.error)} );">navigateToAnchor</button>	
+<button onClick="Wix.getSiteMap(function(siteMap) {
+ var page_id = siteMap[1].pageId.substr(1);
+ Wix.navigateToPage(page_id);">navigateToAnchor</button>
+	
+
 
 </body>
 </html>
