@@ -9,8 +9,10 @@
 </head>
 
 <body  style="border:3px solid red; background-color: #0000ff;">
-
-		<button onClick="openPopup()">Open popup</button>
+        
+        <input type="number" placeholder="width" id="width"> </br>
+        <input type="number" placeholder="height" id="height"> </br>
+		<button onClick="openPopup()">Open popup</button> </br>
 
 		<button onClick="Wix.requestLogin({mode:'login'},function(a){console.log(a)},function(a){console.log(a)});">Request Login</button>
 
@@ -20,9 +22,15 @@
 
 <script>
     function openPopup() {
+        const height = document.getElementById("height").value;
+        const width = document.getElementById("width").value;
+        console.log("height: " + height)
+        console.log("width: " + width)
         var position =  {origin: Wix.WindowOrigin.FIXED, placement: Wix.WindowPlacement.CENTER};
         var onClose = function(message) { console.log("popup closed", message) };
-        Wix.openPopup("https://static.wixstatic.com/media/3cd1de924697419088c1e033bb3384ef.jpg", 400, 400, position, onClose);
+        Wix.openPopup("https://static.wixstatic.com/media/3cd1de924697419088c1e033bb3384ef.jpg", 
+        document.getElementById("width"), 
+        document.getElementById("height"), position, onClose);
                 
     }
 </script>
