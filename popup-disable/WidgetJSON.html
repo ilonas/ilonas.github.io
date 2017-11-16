@@ -20,9 +20,9 @@
 
 <script>
     function openPopup() {
-        var position =  {origin: Wix.WindowOrigin.RELATIVE, placement: Wix.WindowPlacement.CENTER};
+        var position =  {origin: Wix.WindowOrigin.FIXED, placement: Wix.WindowPlacement.CENTER};
         var onClose = function(message) { console.log("popup closed", message) };
-        Wix.openPopup("https://static.wixstatic.com/media/3cd1de924697419088c1e033bb3384ef.jpg", '70%', '70%', position, onClose);
-        
+        Wix.openPopup("https://static.wixstatic.com/media/3cd1de924697419088c1e033bb3384ef.jpg", 400, 400, position, onClose);
+                
     }
 </script>
