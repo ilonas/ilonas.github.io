@@ -10,9 +10,19 @@
 
 <body  style="border:3px solid red; background-color: #0000ff;">
 
-		<button onClick="Wix.Settings.openModal('https://sslstatic.wix.com/services/js-sdk/1.60.0/html/modal.html', 400, 400, 'ilona',function(message) { console.log('modal closed', message); },true)">Open Modal</button>
+		<button onClick="openPopup()">Open Modal</button>
 
 		<button onClick="Wix.requestLogin({mode:'login'},function(a){console.log(a)},function(a){console.log(a)});">Request Login</button>
 
+
 </body>
 </html>
+
+<script>
+    function openPopup() {
+        var position =  {origin: Wix.WindowOrigin.RELATIVE, placement: Wix.WindowPlacement.CENTER};
+        var onClose = function(message) { console.log("popup closed", message) };
+        Wix.openPopup("http://static.wixstatic.com/media/3cd1de924697419088c1e033bb3384ef.jpg", '70%', '70%', position, onClose);
+        
+    }
+</script>
