@@ -3,36 +3,16 @@
 <head>
     <title>Search For String in JSON</title>
 
-    <script type="text/javascript" src="https://static.parastorage.com/services/js-sdk/1.87.0/js/wix.min.js"></script>
+    <script type="text/javascript" src="./Wix.js"></script>
 
 
 </head>
 
 <body  style="border:3px solid red; background-color: #0000ff;">
-        
-        <input type="text" placeholder="width" id="width"> </br>
-        <input type="text" placeholder="height" id="height"> </br>
-		<button onClick="openPopup()">Open popup</button> </br>
+
+		<button onClick="Wix.Settings.openModal('https://sslstatic.wix.com/services/js-sdk/1.60.0/html/modal.html', 400, 400, 'ilona',function(message) { console.log('modal closed', message); },true)">Open Modal</button>
 
 		<button onClick="Wix.requestLogin({mode:'login'},function(a){console.log(a)},function(a){console.log(a)});">Request Login</button>
 
-
 </body>
 </html>
-
-<script>
-    function openPopup() {
-        var height = document.getElementById("height").value;
-        height = height.indexOf("%") !== -1 ? height : Number(height);
-        var width = document.getElementById("width").value;
-        width = width.indexOf("%") !== -1 ? width : Number(width);
-        
-        console.log("height: " + height)
-        console.log("width: " + width)
-        var position =  {origin: Wix.WindowOrigin.FIXED, placement: Wix.WindowPlacement.CENTER};
-        var onClose = function(message) { console.log("popup closed", message) };
-        Wix.openPopup("https://static.wixstatic.com/media/3cd1de924697419088c1e033bb3384ef.jpg", 
-        width,height,position,onClose);
-                
-    }
-</script>
