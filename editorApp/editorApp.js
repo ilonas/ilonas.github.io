@@ -35,6 +35,8 @@ function getAppManifest() {
   
 }
 
+var _port;
+var _editorSDK;
 
 function editorReady(editorSDK) {
 console.log("uploaded!")
