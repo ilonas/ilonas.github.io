@@ -13,6 +13,7 @@ function getAppManifest() {
                                 design: {actionId: 'DESIGN_PANEL_OPENED' },
                                 layout:{actionId: 'LAYOUT_PANEL_OPENED'},
                                 animation: {actionId: 'ANIMATION'},
+                                link: {actionId: 'LINK'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -76,6 +77,8 @@ function onEvent(event) {
                 case 'ANIMATION':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blabla'}});
                     break;
+                case 'LINK':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blablassssssss'}});
                 default:
                     break;
            }
