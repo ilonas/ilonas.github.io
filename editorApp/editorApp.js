@@ -38,7 +38,20 @@ function getAppManifest() {
 
 function editorReady(/*editorSDK, appDefinitionId*/) {
 console.log("uploaded!")
+_editorSDK = editorSDK;
+self.addEventListener('message', ({data, ports}) => {
+    const port = ports[0];
+    switch (data.method) {
+    case 'onEvent':
+        _port = port;
+        break;
+
+    default:
+        break;
+    }
+});
 }
+
 
 function onEvent(event) {
     const componentRef = event.eventPayload.componentRef;
