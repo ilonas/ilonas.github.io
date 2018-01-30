@@ -36,7 +36,7 @@ function getAppManifest() {
 }
 
 
-function editorReady(/*editorSDK, appDefinitionId*/) {
+function editorReady(editorSDK) {
 console.log("uploaded!")
 _editorSDK = editorSDK;
 self.addEventListener('message', ({data, ports}) => {
