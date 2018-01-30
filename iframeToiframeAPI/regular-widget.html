@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script type="text/javascript" src="https://static.parastorage.com/services/js-sdk/da7df86a686f85b0eef32381a30e577aa3ad90a4/js/wix-private.min.js"></script>
+    <title>Provider</title>
+</head>
+<body>
+    <h1>regular widget</h1>
+    <p>(Provider - Provider.html)</p>
+    <h3>widget:</h3>
+    <h2 id="state"></h2>
+    <button onclick="func()">dddd ME</button>
+    <input ondblclick="dbl()">
+    <input id="text">
+    
+
+    <p id="number"></p>
+    <p id="sectionURL"></p>
+
+
+</body>
+</html>
+
+<script>
+   // document.getElementById("state").innerText = document.location.pathname;
+    
+
+    function multiply(value1, value2){
+       return value1 - value2;
+    };
+
+    function getValue() {
+        console.log(document.getElementById("text").value)
+        return document.getElementById("text").value;
+    };
+
+    function pinkBG(){
+        document.bgColor='pink';
+    }
+
+
+    function sectionUrl(){
+        var securl = Wix.Utils.getSectionUrl({sectionId: 'section'}, function(data) {console.log(data);});
+    }
+
+    function getProduct() {
+        return document.location.pathname
+    }
+
+
+    function func() {
+        Wix.fireEvent("itemClicked")
+    }
+
+    function dbl() {
+        Wix.fireEvent("doubleClicked")
+    }
+
+    
+    var apiObject = {
+        multiply: multiply,
+        pinkBG: pinkBG,
+        sectionUrl: sectionUrl,
+        getValue: getValue,
+        getProduct: getProduct
+
+    }
+
+    Wix.registerApi(apiObject) 
+
+</script>
+

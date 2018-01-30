@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script type="text/javascript" src="https://static.parastorage.com/services/js-sdk/da7df86a686f85b0eef32381a30e577aa3ad90a4/js/wix-private.min.js"></script>
+    <title>Menu</title>
+</head>
+<body>
+    <h1>PRODUCT GALLERY </h1>
+    <p>(NOT PROVIDER - menu.html)</p>
+    <button onclick="changeState('Shirt')">Shirt</button>
+    <button onclick="changeState('Dress')">Dress</button>
+    <button onclick="changeState('Hat')">Hat</button>
+
+</body>
+</html>
+
+<script>
+
+    function changeState(state) {
+        Wix.Utils.navigateToSection( { sectionId : 'section' }, state);
+    
+    }
+    </script>
+
+
