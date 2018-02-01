@@ -15,7 +15,7 @@ function getAppManifest() {
                                 animation: 'HIDE',
                                 settings: 'HIDE',
                                 crop: 'HIDE',
-                                filters: 'HIDE'
+                                filters: {actionId: 'FILTERS_BLA'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -93,8 +93,8 @@ function onEvent(event) {
                 case 'CROP_PANEL_MOBILE':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'cropmobilee'}});
                     break;
-                case 'EFFECT_BLA_BLV':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'effectss'}});
+                case 'FILTERS_BLA':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'filterss'}});
                 default:
                     break;
            }
