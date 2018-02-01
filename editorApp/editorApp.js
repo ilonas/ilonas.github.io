@@ -18,7 +18,7 @@ function getAppManifest() {
                                 filters: {actionId: 'FILTERS_BLA'},
                                 link: 'HIDE',
                                 stretched: {actionId: "STRETCH_NNN"},
-                                upgrade: {actionId: "UPGRADE_PANEL"}
+                                upgrade: 'HIDE'
 
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
@@ -101,9 +101,9 @@ function onEvent(event) {
                 case 'STRETCH_NNN':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'swwedwdw'}});
                     break;
-                case 'UPGRADE_PANEL':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'upgardePAnel'}});
-                    break;
+                // case 'UPGRADE_PANEL':
+                //     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'upgardePAnel'}});
+                //     break;
                 case 'FILTERS_BLA':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'filterss'}});
                 default:
