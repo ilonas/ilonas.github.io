@@ -11,7 +11,7 @@ function getAppManifest() {
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
                                 stretched: {actionId: 'STRETCH_NNN'},
-                                upgarde: {actionId: 'UPGRADE_PANEL'}
+                                //upgarde: {actionId: 'UPGRADE_PANEL'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
