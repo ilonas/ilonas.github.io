@@ -69,7 +69,7 @@ function onEvent(event) {
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'swwedwdw'}});
                     break;
                 case 'UPGRADE_PANEL':
-                    _editorSDK.components.data.console.log('test');
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ss'}});
                     break;
                 case 'FILTERS_BLA':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'filterss'}});
