@@ -13,8 +13,8 @@ function getAppManifest() {
                                 design: {actionId: 'DESIGN_PANEL_OPENED' },
                                 layout:{actionId: 'LAYOUT_PANEL_OPENED'},
                                 animation: {actionId: 'ANIMATION'},
-                                link: {actionId: 'LINK'},
-                                settings: {actionId: 'SETTINGS_PANEL'}
+                                settings: {actionId: 'SETTINGS_PANEL'},
+                                crop: {actionId: 'CROP_PANEL'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -22,8 +22,11 @@ function getAppManifest() {
                             mainAction1:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
                                 layout: {actionId: 'MOBILE_LAYOUT_PANEL_OPENED'},
+                                design: {actionId: 'DESIGN_PANEL_OPENED_MOBILE' },
                                 animation:{actionId: 'ANIMATION_MOBILE'},
-                                settings: {actionId: 'SETTINGS_PANEL_MOBILE'}
+                                settings: {actionId: 'SETTINGS_PANEL_MOBILE'},
+                                crop: {actionId: 'CROP_PANEL_MOBILE'}
+
                             },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         }
@@ -79,17 +82,20 @@ function onEvent(event) {
                 case 'DESIGN_PANEL_OPENED':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'DesignPanelClicked'}});
                     break;
-                case 'ANIMATION':
+                case 'DESIGN_PANEL_OPENED_MOBILE':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blabla'}});
                     break;
                 case 'ANIMATION_MOBILE':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'fewfwfw'}});
                     break;
-                case 'LINK':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blabla'}});
-                    break;
                 case 'SETTINGS_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'settingsPanel'}});
+                    break;
+                case 'CROP_PANEL':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'cropppp'}});
+                    break;
+                case 'CROP_PANEL_MOBILE':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'cropmobilee'}});
                     break;
                 case 'SETTINGS_PANEL_MOBILE':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'settingsPanelMobile'}});
