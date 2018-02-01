@@ -18,8 +18,7 @@ function getAppManifest() {
                                 filters: {actionId: 'FILTERS_BLA'},
                                 link: 'HIDE',
                                 stretched: {actionId: "STRETCH_NNN"},
-                                upgrade: 'HIDE'
-
+                                upgarde: {actionId:"UPGRADE_PANEL"}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -31,7 +30,7 @@ function getAppManifest() {
                                 animation:{actionId: 'ANIMATION_MOBILE'},
                                 settings: 'HIDE',
                                 //crop: {actionId: 'CROP_PANEL_MOBILE'},
-                                upgarde: {actionId:"UPGRADE_PANEL"}
+                               
                             
 
                             },
