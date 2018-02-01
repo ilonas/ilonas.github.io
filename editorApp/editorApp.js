@@ -16,7 +16,7 @@ function getAppManifest() {
                                 link: {actionId: 'LINK'},
                                 effects: 'HIDE'
                         },
-                            helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
+                            helpId: 'HIDE'
                         },
                         mobile: {
                             mainAction1:{ actionId: 'MANAGE', label: 'Manage This Btn' },
