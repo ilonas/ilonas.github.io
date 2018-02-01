@@ -10,7 +10,7 @@ function getAppManifest() {
                             mainAction1:'HIDE',
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
-                                design: {actionId: 'DESIGN_PANEL_OPENED' },
+                                design: 'HIDE',
                                 layout:'HIDE',
                                 animation: 'HIDE',
                                 settings: 'HIDE',
@@ -23,7 +23,7 @@ function getAppManifest() {
                             mainAction1:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
                                 layout: 'HIDE',
-                                design: {actionId: 'DESIGN_PANEL_OPENED_MOBILE' },
+                                design: 'HIDE',
                                 animation:{actionId: 'ANIMATION_MOBILE'},
                                 settings: 'HIDE',
                                 crop: {actionId: 'CROP_PANEL_MOBILE'},
@@ -69,17 +69,11 @@ function onEvent(event) {
     switch (event.eventType) {
       case 'componentGfppClicked':
             switch (eventId) {
-                case 'EDIT':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'EditButtonClicked'}});
-                    break;
-                // case 'MANAGE':
-                //     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ManageButtonClicked'}});
+                // case 'EDIT':
+                //     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'EditButtonClicked'}});
                 //     break;
-                case 'LAYOUT_PANEL_OPENED':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'LayoutPanelClicked'}});
-                    break;
-                case 'MOBILE_LAYOUT_PANEL_OPENED':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'LayoutPanelClickedmobile'}});
+                case 'MANAGE':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ManageButtonClicked'}});
                     break;
                 case 'DESIGN_PANEL_OPENED':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'DesignPanelClicked'}});
