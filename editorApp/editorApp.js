@@ -14,7 +14,7 @@ function getAppManifest() {
                                 layout:{actionId: 'LAYOUT_PANEL_OPENED'},
                                 animation: {actionId: 'ANIMATION'},
                                 link: {actionId: 'LINK'},
-                                filter: {actionId: 'EFFECT_PANEL_OPENED'}
+                                filter: 'HIDE'
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
