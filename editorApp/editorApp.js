@@ -12,9 +12,10 @@ function getAppManifest() {
                             iconButtons: {
                                 design: {actionId: 'DESIGN_PANEL_OPENED' },
                                 layout:'HIDE',
-                                animation: {actionId: 'ANIMATION'},
+                                animation: 'HIDE',
                                 settings: 'HIDE',
-                                crop: {actionId: 'CROP_PANEL'}
+                                crop: 'HIDE',
+                                effects: {actionId: 'EFFECT_BLA_BLV'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -25,7 +26,8 @@ function getAppManifest() {
                                 design: {actionId: 'DESIGN_PANEL_OPENED_MOBILE' },
                                 animation:{actionId: 'ANIMATION_MOBILE'},
                                 settings: 'HIDE',
-                                crop: {actionId: 'CROP_PANEL_MOBILE'}
+                                crop: {actionId: 'CROP_PANEL_MOBILE'},
+                            
 
                             },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
@@ -97,8 +99,8 @@ function onEvent(event) {
                 case 'CROP_PANEL_MOBILE':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'cropmobilee'}});
                     break;
-                case 'SETTINGS_PANEL_MOBILE':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'settingsPanelMobile'}});
+                case 'EFFECT_BLA_BLV':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'effectss'}});
                 default:
                     break;
            }
