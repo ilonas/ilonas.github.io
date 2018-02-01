@@ -9,10 +9,9 @@ function getAppManifest() {
                         desktop: {
                             mainAction1:{ actionId: 'EDIT', label: 'Edit  Btn' },
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage bla bla' },
-                            mainAction3:{ actionId: 'BLAB', label: 'BLAB' },
                             iconButtons: {
                                 design: {actionId: 'DESIGN_PANEL_OPENED' },
-                                layout:{actionId: 'LAYOUT_PANEL_OPENED'},
+                                layout:{actionId: 'LAYOUT_PANEL_OPENED', label: 'BLAB'},
                                 animation: {actionId: 'ANIMATION'},
                                 link: {actionId: 'LINK'},
                                 effects: 'HIDE'
