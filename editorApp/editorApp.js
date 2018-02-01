@@ -7,14 +7,13 @@ function getAppManifest() {
                 buttonrole: {
                     gfpp: {
                         desktop: {
-                            mainAction1:{ actionId: 'EDIT', label: 'Edit  Btn' },
-                            mainAction2:{ actionId: 'MANAGE', label: 'Manage bla bla' },
+                            mainAction1:'HIDE',
+                            mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
                                 design: {actionId: 'DESIGN_PANEL_OPENED' },
-                                layout:{actionId: 'LAYOUT_PANEL_OPENED', },
+                                layout:{actionId: 'LAYOUT_PANEL_OPENED'},
                                 animation: {actionId: 'ANIMATION'},
-                                link: {actionId: 'LINK'},
-                                effects: 'HIDE'
+                                link: {actionId: 'LINK'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -24,7 +23,7 @@ function getAppManifest() {
                                 layout: {actionId: 'MOBILE_LAYOUT_PANEL_OPENED'},
                                 animation:'HIDE'
                             },
-                            helpId: 'HIDE'
+                            helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         }
                     }
                 }
@@ -66,9 +65,9 @@ function onEvent(event) {
                 case 'EDIT':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'EditButtonClicked'}});
                     break;
-                case 'MANAGE':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ManageButtonClicked'}});
-                    break;
+                // case 'MANAGE':
+                //     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ManageButtonClicked'}});
+                //     break;
                 case 'LAYOUT_PANEL_OPENED':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'LayoutPanelClicked'}});
                     break;
@@ -79,7 +78,7 @@ function onEvent(event) {
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blabla'}});
                     break;
                 case 'LINK':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blablassssssss'}});
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blabla'}});
                 default:
                     break;
            }
