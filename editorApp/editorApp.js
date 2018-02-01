@@ -14,7 +14,7 @@ function getAppManifest() {
                                 layout:{actionId: 'LAYOUT_PANEL_OPENED'},
                                 animation: {actionId: 'ANIMATION'},
                                 link: {actionId: 'LINK'},
-                                filter: 'HIDE'
+                                effects: 'HIDE'
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -80,9 +80,6 @@ function onEvent(event) {
                     break;
                 case 'LINK':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'blablassssssss'}});
-                    break;
-                case 'EFFECT_PANEL_OPENED':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'EFFECTTTTT'}});
                 default:
                     break;
            }
