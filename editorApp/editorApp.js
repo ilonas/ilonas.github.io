@@ -10,8 +10,7 @@ function getAppManifest() {
                             mainAction1:'HIDE',
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
-                                stretched: {actionId: 'STRETCH_NNN'},
-                                //upgarde: {actionId: 'UPGRADE_PANEL'}
+                                design: {actionId: 'DESIGN_PANEL'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -67,6 +66,9 @@ function onEvent(event) {
                 
                 case 'STRETCH_NNN':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'swwedwdw'}});
+                    break;
+                 case 'DESIGN_PANEL':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'designnnn'}});
                     break;
                 case 'UPGRADE_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ss'}});
