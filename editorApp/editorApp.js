@@ -15,7 +15,8 @@ function getAppManifest() {
                                 animation: 'HIDE',
                                 settings: 'HIDE',
                                 crop: {actionId: 'CROP_PANEL'},
-                                filters: {actionId: 'FILTERS_BLA'}
+                                filters: {actionId: 'FILTERS_BLA'},
+                                link: 'HIDE',
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -26,7 +27,7 @@ function getAppManifest() {
                                 design: 'HIDE',
                                 animation:{actionId: 'ANIMATION_MOBILE'},
                                 settings: 'HIDE',
-                                crop: {actionId: 'CROP_PANEL_MOBILE'},
+                                //crop: {actionId: 'CROP_PANEL_MOBILE'},
                                 hide: 'HIDE',
                             
 
