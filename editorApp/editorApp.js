@@ -11,9 +11,9 @@ function getAppManifest() {
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
                                 design: {actionId: 'DESIGN_PANEL_OPENED' },
-                                layout:{actionId: 'LAYOUT_PANEL_OPENED'},
+                                layout:'HIDE',
                                 animation: {actionId: 'ANIMATION'},
-                                settings: {actionId: 'SETTINGS_PANEL'},
+                                settings: 'HIDE',
                                 crop: {actionId: 'CROP_PANEL'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
@@ -21,10 +21,10 @@ function getAppManifest() {
                         mobile: {
                             mainAction1:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
-                                layout: {actionId: 'MOBILE_LAYOUT_PANEL_OPENED'},
+                                layout: 'HIDE',
                                 design: {actionId: 'DESIGN_PANEL_OPENED_MOBILE' },
                                 animation:{actionId: 'ANIMATION_MOBILE'},
-                                settings: {actionId: 'SETTINGS_PANEL_MOBILE'},
+                                settings: 'HIDE',
                                 crop: {actionId: 'CROP_PANEL_MOBILE'}
 
                             },
