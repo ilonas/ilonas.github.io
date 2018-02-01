@@ -15,7 +15,7 @@ function getAppManifest() {
                                 animation: 'HIDE',
                                 settings: 'HIDE',
                                 crop: 'HIDE',
-                                effects: {actionId: 'EFFECT_BLA_BLV'}
+                                effects: 'HIDE'
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
