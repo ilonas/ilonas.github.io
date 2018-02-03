@@ -22,6 +22,7 @@ function getAppManifest() {
                         mobile: {
                             mainAction1:{ actionId: 'MANAGE', label: 'Manage This Mobile' },
                             iconButtons: {
+                                text: 'HIDE'
                                 //layout: 'HIDE',
                                 //design: 'HIDE',
                                 //animation:{actionId: 'ANIMATION_MOBILE'},
