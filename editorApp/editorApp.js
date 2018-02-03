@@ -22,7 +22,7 @@ function getAppManifest() {
                         mobile: {
                             mainAction1:{ actionId: 'MANAGE', label: 'Manage This Mobile' },
                             iconButtons: {
-                                textSize: 'HIDE'
+                                textSize: {actionId: 'TEXT_SIZE'}
                                 //layout: 'HIDE',
                                 //design: 'HIDE',
                                 //animation:{actionId: 'ANIMATION_MOBILE'},
@@ -79,7 +79,7 @@ function onEvent(event) {
                 case 'UPGRADE_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ss'}});
                     break;
-                case 'PIN_MODE_PANEL':
+                case 'TEXT_SIZE':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'filterss'}});
                 default:
                     break;
