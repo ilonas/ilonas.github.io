@@ -13,7 +13,7 @@ function getAppManifest() {
                                 layout: 'HIDE',
                                 animation: 'HIDE',
                                 design: {actionId: 'DESIGN_PANEL'},
-                                pin_mode: {actionId: 'PIN_MODE_PANEL'}
+                                pin_mode: 'HIDE',
 
                                 //stretched: {actionId:'STRETCHED_PANEL'}
                         },
