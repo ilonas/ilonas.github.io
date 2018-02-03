@@ -10,12 +10,13 @@ function getAppManifest() {
                             mainAction1:'HIDE',
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
-                                design: {actionId: 'DESIGN_PANEL'}
+                                design: {actionId: 'DESIGN_PANEL'},
+                                stretch: {actionId:'STRETCHED_PANEL'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
                         mobile: {
-                            mainAction1:{ actionId: 'MANAGE', label: 'Manage This Btn' },
+                            mainAction1:{ actionId: 'MANAGE', label: 'Manage This Mobile' },
                             iconButtons: {
                                 layout: 'HIDE',
                                 design: 'HIDE',
@@ -64,8 +65,8 @@ function onEvent(event) {
       case 'componentGfppClicked':
             switch (eventId) {
                 
-                case 'STRETCH_NNN':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'swwedwdw'}});
+                case 'STRETCHED_PANEL':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'oh yeah'}});
                     break;
                  case 'DESIGN_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'designnnn'}});
