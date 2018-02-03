@@ -13,7 +13,9 @@ function getAppManifest() {
                                 layout: 'HIDE',
                                 animation: 'HIDE',
                                 design: {actionId: 'DESIGN_PANEL'},
-                                stretch: {actionId:'STRETCHED_PANEL'}
+                                pin_mode: {actionId: PIN_MODE_PANEL}
+
+                                //stretched: {actionId:'STRETCHED_PANEL'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -76,7 +78,7 @@ function onEvent(event) {
                 case 'UPGRADE_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ss'}});
                     break;
-                case 'FILTERS_BLA':
+                case 'PIN_MODE_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'filterss'}});
                 default:
                     break;
