@@ -10,10 +10,10 @@ function getAppManifest() {
                             mainAction1:'HIDE',
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
-                                layout: 'HIDE',
-                                animation: 'HIDE',
-                                design: {actionId: 'DESIGN_PANEL'},
-                                crop: {actionId: 'CROP_PANEL'},
+                                layout: {actionId: 'LAYOUT_PANEL'},
+                                //animation: 'HIDE',
+                                //design: {actionId: 'DESIGN_PANEL'},
+                                //crop: {actionId: 'CROP_PANEL'},
 
 
                                 //stretched: {actionId:'STRETCHED_PANEL'}
@@ -29,6 +29,7 @@ function getAppManifest() {
                                 //animation:{actionId: 'ANIMATION_MOBILE'},
                                 //settings: 'HIDE',
                                 //crop: {actionId: 'CROP_PANEL_MOBILE'},
+
 
                             },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
