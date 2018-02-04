@@ -11,7 +11,8 @@ function getAppManifest() {
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
                                 layout: {actionId: 'LAYOUT_PANEL'},
-                                //animation: 'HIDE',
+                                design: 'HIDE',
+                                
                                 //design: {actionId: 'DESIGN_PANEL'},
                                 //crop: {actionId: 'CROP_PANEL'},
 
