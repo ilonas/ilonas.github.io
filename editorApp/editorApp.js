@@ -78,8 +78,8 @@ function onEvent(event) {
                  case 'DESIGN_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'designnnn'}});
                     break;
-                case 'UPGRADE_PANEL':
-                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'ss'}});
+                case 'LAYOUT_PANEL':
+                    _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'layoutttt'}});
                     break;
                 case 'TEXT_SIZE':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'filterss'}});
