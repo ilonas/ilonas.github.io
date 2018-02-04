@@ -71,7 +71,7 @@ function onEvent(event) {
       case 'componentGfppClicked':
             switch (eventId) {
                 
-                case 'STRETCHED_PANEL':
+                case 'CROP_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'oh yeah'}});
                     break;
                  case 'DESIGN_PANEL':
