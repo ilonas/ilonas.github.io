@@ -7,7 +7,7 @@ function getAppManifest() {
                 buttonrole: {
                     gfpp: {
                         desktop: {
-                            mainAction1:'HIDE',
+                            mainAction1:{ actionId: 'EDIT', label: 'Edit this button' },
                             mainAction2:{ actionId: 'MANAGE', label: 'Manage This Btn' },
                             iconButtons: {
                                 layout: {actionId: 'LAYOUT_PANEL'},
@@ -71,7 +71,12 @@ function onEvent(event) {
     switch (event.eventType) {
       case 'componentGfppClicked':
             switch (eventId) {
-                
+                case 'EDIT':
+                _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'edit button'}});
+                break;
+                case 'MANAGE':
+                _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'manage button'}});
+                break;
                 case 'CROP_PANEL':
                     _editorSDK.components.data.update('token', {componentRef: componentRef, data:{label: 'oh yeah'}});
                     break;
