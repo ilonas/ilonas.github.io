@@ -15,9 +15,6 @@ function getAppManifest() {
                                 
                                 //design: {actionId: 'DESIGN_PANEL'},
                                 //crop: {actionId: 'CROP_PANEL'},
-
-
-                                //stretched: {actionId:'STRETCHED_PANEL'}
                         },
                             helpId: 'bc3c1b91-e9f4-441e-b89e-bb7801fe0b2c'
                         },
@@ -50,19 +47,7 @@ var _port;
 var _editorSDK;
 
 function editorReady(editorSDK) {
-console.log("uploaded!")
 _editorSDK = editorSDK;
-self.addEventListener('message', ({data, ports}) => {
-    const port = ports[0];
-    switch (data.method) {
-    case 'onEvent':
-        _port = port;
-        break;
-
-    default:
-        break;
-    }
-});
 }
 
 
