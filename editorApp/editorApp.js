@@ -4,7 +4,11 @@ function getAppManifest() {
     controllerWithExportsAsObject: {
         default: {
             connections: {
-                buttonrole: {
+                buttonrole: { 
+                    behavior:{
+
+
+                    },
                     gfpp: {
                         desktop: {
                             mainAction1:{ actionId: 'EDIT', label: 'Edit this button' },
